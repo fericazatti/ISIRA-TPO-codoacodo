@@ -81,13 +81,34 @@
     border-radius: 3px;        
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:500px){
     .pie_pagina .grupo1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
+        
+    }
+    .pie_pagina .grupo1 .box figure img{
+        width: 150px;
+        
+    }
+    
+    .pie_pagina .grupo1 .box p{
+        color: #efefef;
+        text-align: justify;
+
     }
 
+    .pie_pagina .grupo1 .red_social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        
+        
+        text-align: center;
+        transition: all 300ms ease;
+    }
     
 }

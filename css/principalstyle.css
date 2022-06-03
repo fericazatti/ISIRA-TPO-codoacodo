@@ -86,7 +86,7 @@
     color: #ffffff;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:500px){
     .cuerpo-index .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -100,7 +100,6 @@
     .cuerpo-index .grupo-2 .box figure img{
         margin: auto;
         width: 350px;
-        border-radius: 1px;
-        
+        border-radius: 1px;        
     }    
 }
