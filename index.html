@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/logo/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/headerstyle.css">
+    <link rel="stylesheet" href="./css/loginstyle.css">
+    <link rel="stylesheet" href="./css/footerstyle.css">
+    <link rel="stylesheet" href="./css/principalstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Laboratorios Isira</title>
+    <style>        
+        .wrapper 
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+            margin: 40px;
+            
+        }    
+        .one {
+            grid-column: 1;
+            grid-row: 1/6;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .two {
+            grid-column: 2/4;
+            grid-row: 1/4;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: top;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 34px;
+             
+        }
+
+        #presentacion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 60vh;
+            background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./imagenes/microscopio2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+</head>
+<header>
+     
+    <div class="header">
+        <a href="./index.html" class="logo"><img src="./imagenes/logo/logo3.png" width="350" alt=""></a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <a href="./form_contacto.html">Contacto</a>
+          <a href="#nosotros" target="">Nosotros</a>
+          <a href="">Resultados Online</a>
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Portal Paciente</b></button>
+        </div>        
+      </div>
+</header>
+<section>
+    <article>
+
+    </article>
+</section>
+
+
+<body>
+
+  <div class="cuerpo-index">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href=""><img src="./imagenes/microscopio.jpg" alt=""></a>
+        </figure>
+        <h3>  Estudios de rutina y de alta complejidad</h3>
+
+        <p> Laboratorio Isira es un centro de referencia mundial, que cuenta con aproximadamente 350 consultores y expertos en clínicas y laboratorios. Estamos comprometidos a atender a nuestros pacientes de todo el mundo y nos esforzamos por fusionar técnicas de alta complejidad con los procedimientos más tonificantes para proporcionar los mejores resultados posibles.</p>        
+        <p>Realizamos una gran cantidad de estudios convencionales con la mejora atención en cuanto a calidad y experiencia del usuario. Entre nuestras especializadas abordadas las principales que podemos mencionar son:</p>
+        <ul><b>
+          <li>Hematología</li>
+          <li>Neurologia</li>
+          <li>Oncologia</li>
+          <li>Obstetricia</li>
+          <li>Pediatria</li>
+          <li>Endocrinología</li>
+        </b></ul>
+       
+      </div>
+      
+      <div class="box" >
+        <h3>Atención personalizada</h3>
+        <p> Isira es un laboratorio clínico de alta complejidad, que ofrece una amplia gama de servicios de laboratorio de alto nivel. En Isira no trabajamos solo para el diagnóstico de las enfermedades más comunes sino también para la evaluación del estado general del paciente mediante un plan de controloes periodicos.
+            Todo esto es logrado mediante la implementación de las siguientes caracteristicas en nuestro servicio:
+        </p>
+        <ul>
+          <li>Historia clinica digital</li>
+          <li>Comunicación directa con el paciente</li>
+          <li>Sala especial para niños</li>
+        </ul>
+        <figure>
+          <img src="./imagenes/manos.jpg" alt="img" tar>
+        </figure>
+      </div>
+      
+      <div class="box">
+        <h3>Conozca NeuroTests&reg;</h3>
+        <p>NeuroTests&reg es un sistema desarrollado e implementado en nuestras instalaciones creado para el cuidado del cerebro de nuestros pacientes.</p>
+        <figure>
+          <img src="./imagenes/brain.jpg" alt="">
+        </figure>        
+        <p> Nuestro objetivo es el de ofrecer un estudio integral de la condición cerebral de nuestros pacientes. Esto incluye el diagnóstico y tratamiento de muchas enfermedades comunes del sistema nervioso que afectan a bajas tasas a la población general. Nuestros clientes siempre son evaluados por profesionales altamente cualificados, entre los cuales se incluyen neurólogos y psicólogos experimentados con una amplia experiencia en diagnóstico y tratamiento.</p>
+      </div>
+      
+    </div>
+
+    <div class="grupo-2">
+      <div class="box">
+        <figure>
+          <img src="./imagenes/nosotros.jpg" alt="">
+        </figure>
+      </div>
+      <div class="box" id="nosotros">
+        <h3>Sobre Nosotros</h3>
+        <p> Laboratorio Isira se ha caracterizado como un laboratorio de investigación clínica y de alta complejidad desde su creación. Fué fundado por el Dr. Isidro Vitoria Ferreira, experto en medicina interna con más de 20 años de experiencia clínica y también un importante líder en el ámbito de la investigación biomédica. Laboratorio Isira ofrece servicios de investigación para los estudios que necesitan salas y equipo de laboratorio específico. Nuestra cartera amplia y flexible ofrece alta calidad con costes razonables. </p>
+        <p> Laboratorio Isira es un centro de diagnóstico y tratamiento médico moderno que cuenta con las últimas tecnologías. Dispone de instalaciones propias para la práctica conjunta de diferentes áreas médicas, por ejemplo el laboratorio, la hematología, fisioterapia, etc.</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+    <div id="id01" class="modal">  <!-- en esta sección se define el formulario de registro -->               
+      <form class="modal-content animate" action="" method="">
+
+          <!-- <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div> -->        
+          <div class="container">
+
+            <p>
+              <label for="user"><b>Email</b></label>
+              <input id="user" type="text" placeholder="Ingrese su email de usuario (o número de DNI)" name="user" required>
+            </p>
+
+            <p>
+              <label for="psw"><b>Contraseña</b></label>
+              <input id="psw" type="password" placeholder="Ingrese su contraseña" minlength="8" name="psw" required>
+            </p>
+
+            <button type="submit"><b>Login</b></button>
+
+            <p><label id="rememberme">
+            <input type="checkbox" checked="checked" name="remember"> Guardar datos
+            </label>    
+              </p>
+          </div>        
+
+          <div class="container" style="background-color:#f1f1f1">              
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+            <span class="psw">Olvidaste tu <a href="#">contraseña?</a></span>
+          </div><br><br>
+          <p>
+          No tienes cuenta de acceso al portal paciente?<br><a href="./form_registro.html" class="" id="createAccountButton">Crear cuenta nueva</a>
+          </p>
+   
+      </form>
+    </div>    
+       
+    <footer class="pie_pagina">
+      <div class="grupo1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="./imagenes/logo/logo3editado.png" width="250" alt="">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h4>Al servicio de nuestros pacientes</h4>
+              <p>Somos un equipo de profesionales multidisciplinario enfocado en el cumplimiento de la buenas prácticas de laboratorio clínico, para asegurar la calidad, precisión, confiabilidad y rapidez en la entrega de nuestros resultados.</p>
+          </div>
+          <div class="box">
+              <h4>Buscanos en:</h4>
+              <div class="red_social">
+                  <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square bx-lg ' style='color:#ffffff'  ></i></a>
+                  <a href="https://ar.linkedin.com/" target="_blank"><i class='bx bxl-linkedin-square bx-lg ' style='color:#ffffff'  ></i></a>
+                  <a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp-square bx-lg ' style='color:#ffffff' ></i></a>
+                  <a href="https://discord.com/login?redirect_to=%2Fchannels%2F%40me" target="_blank"><i class='bx bxl-discord-alt bx-lg bx-tada' style='color:#ffffff' ></i></a>                        
+              </div>
+          </div>
+      </div>
+      <div class="grupo2">
+           &copy; 2022 <b>ISIRA</b> Todos Los Derechos Resevados. <small> <b> by FerIcazatti</b></small>
+      </div>            
+
+    </footer>
+
+    <script>
+    // Obtengo el modelo
+    var modal = document.getElementById('id01');
+    
+    // Funcionalidad para que se cierre la ventana al clickear la pantalla
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) modal.style.display = "none";
+    }
+    </script>
+</body>
+</html>

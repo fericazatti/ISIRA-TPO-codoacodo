@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./imagenes/logo/favicon_io/favicon-16x16.png" type="image/x-icon">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <title>Laboratorios Isira</title>
+    </head>
+    <header>
+        <section style="background-color:#b30059  ; color: white; size: 100mm;" align="center">        
+            <h1>ISIRA - Red de Laboratorios de alta complejidad        </h1>
+        </section>
+        <section>
+            <a href="./index.html"><img src="./imagenes/logo.png" width="130" alt=""></a>
+            <!-- <a href="./index.html"><img src="./imagenes/logo/muestrasLaboratorio.jpg" alt="" width="300"></a>     -->
+        </section>
+    </header>
+  
+    </style>
+<body>
+    
+    <form action="">
+    <h3>Resgistro en el portal paciente</h3>
+    <Fieldset>
+        <legend>Datos personales</legend>
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" size="30">      
+        </p>
+        <p>
+            <label for="nombre">Apellido</label>
+            <input type="text" name="nombre" id="nombre" size="30">
+        </p>
+
+        <p>
+            <label for="born">Nacimiento:</label>
+            <input type="date" id="born" name="born" value=""
+                                     min="1900-01-01" max="2010-12-31">        
+        </p>
+        
+        <p>
+        Sexo:
+        <br>
+        <label><input type="radio" name="sexo" value="M" checked> Masculino</label></p>
+        <label><input type="radio" name="sexo" value="F" checked> Femenino</label></p>
+        <label for="obrasocial">Obra Social:</label>
+        <select name="obrasocial" id="obrasocial">
+            <option value="damsu">Damsu</option>
+            <option value="sancor seguros">Sancor</option>
+            <option value="osde">Osde</option>
+        </select>
+    </Fieldset>
+
+    <fieldset>
+        <legend>Datos de contacto</legend>
+        
+        <p>
+            <label for="phone">Celular:</label>
+            <input id="phone" type="tel" name="phone" />            
+        </p>
+        <p>
+            <label for="direccion">Domicilio:</label>
+            <input type="text" name="direccion" id="direccion" size="50">
+        </p>
+    </fieldset>
+    
+    <button type="submit">Enviar</button>
+
+    </form>
+    <div class="alert alert-info" style="display: none;"></div>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+    const info = document.querySelector(".alert-info");
+    function process(event) {
+        event.preventDefault();
+
+    const phoneNumber = phoneInput.getNumber();
+
+    info.style.display = "";
+    info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+    }
+</script>
+</html>
