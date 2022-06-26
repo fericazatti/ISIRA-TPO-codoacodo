@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./imagenes/logo/favicon_io/favicon-16x16.png" type="image/x-icon">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-        <title>Laboratorios Isira</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/logo/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Laboratorios Isira</title>
+</head>
+
+<body>
     <header>
         <section style="background-color:#b30059  ; color: white; size: 100mm;" align="center">        
             <h1>ISIRA - Red de Laboratorios de alta complejidad        </h1>
@@ -21,10 +20,7 @@
             <!-- <a href="./index.html"><img src="./imagenes/logo/muestrasLaboratorio.jpg" alt="" width="300"></a>     -->
         </section>
     </header>
-  
-    </style>
-<body>
-    
+
     <form action="">
     <h3>Resgistro en el portal paciente</h3>
     <Fieldset>
@@ -74,21 +70,7 @@
 
     </form>
     <div class="alert alert-info" style="display: none;"></div>
+
+    <script src="./js/formregistro.js"></script>
 </body>
-<script>
-    const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-    const info = document.querySelector(".alert-info");
-    function process(event) {
-        event.preventDefault();
-
-    const phoneNumber = phoneInput.getNumber();
-
-    info.style.display = "";
-    info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
-    }
-</script>
 </html>

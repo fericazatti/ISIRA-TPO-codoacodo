@@ -1,0 +1,124 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+            textarea{
+                width: 99%;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 3px;
+                border-radius: 3px;
+            }
+
+        p * {
+        display: block;
+        }
+
+        input[type=(email)]{
+        -webkit-appearance: none;
+        appearance: none;
+
+        width: 200%;
+        border: 1px solid rgb(155, 75, 75);
+        margin: 0;
+
+        font-family: inherit;
+        font-size: 90%;
+
+        box-sizing: border-box;
+        
+        }
+        
+        /* Este es nuestro diseño para los campos no válidos */
+        input:invalid{
+        border-color: rgb(153, 71, 0);
+        background-color: #FDD;
+        width: 98%;
+        }
+
+        input:focus:invalid {
+        outline: none;
+        }
+
+        /* Este es el diseño para nuestros mensajes de error */
+        .error {
+        width : 100%;
+        padding: 0;
+
+        font-size: 80%;
+        color: white;
+        background-color: red;
+        border-radius: 0 0 5px 5px;
+        
+
+        
+        }
+
+        .error.active {
+        padding: 0.3em;
+        }
+        .wrapper 
+        {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            gap: 10px;
+            margin: 40px;
+            
+        }    
+        .one {
+            grid-column: 1;
+            grid-row: 1/6;
+            background-color: rgb(255, 255, 255);                  
+        }
+
+       .two {
+            grid-column: 2;
+            grid-row: 1/6;
+            background-color: transparent;     
+            padding-left: 60px;
+        }
+
+        .contacto_formulario {
+            width: 100%;            
+            padding: 5% 5%;
+            border-radius: 7px;
+            background: rgba(213, 161, 134, 0.4);
+        }
+        .form_input {
+            width: 98%;
+            border: 3px solid transparent;
+            border-radius: 3px;
+            height: 25px;
+            
+            line-height: 50px;
+            align-content: left;
+            transition: .3s ease all;
+            margin-bottom: 20px;
+            margin-right: 0px;
+
+        }
+        h2{
+            font-size: 25px;
+            text-align: left;
+            color: #b30059;
+        }
+        h3{
+            font-size: large;
+            text-align: center;
+            color: black;            
+        }
+
+    @media screen and (max-width: 500px) {            
+        .wrapper{
+            display: grid;
+            grid-template-columns:auto;
+            grid-template-rows:auto auto;
+        }
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+            background-color: rgb(255, 255, 255);                  
+        }
+
+       .two {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    }

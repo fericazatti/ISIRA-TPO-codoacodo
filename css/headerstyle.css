@@ -47,7 +47,15 @@
     float: center;
   }
 
-  
+  @media screen and (max-width: 1160px){
+   .header a{
+    padding: 12px 4px;    
+   }    
+
+   .header a.logo {
+    margin-left: 40px ;
+   }
+  }
 
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
@@ -64,8 +72,9 @@
       font-weight: bold;
       align-content: center;
       margin-left: 0px;
-      margin-top: 0px;
-      width: 1px;
+      margin-top: 0px;   
+      
     }
+    
     
   }
